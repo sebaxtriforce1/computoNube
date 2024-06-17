@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-k(fk6^lgafywdrz%i9hl^bg2%yvhj+3f4ie8%lo%zz(e6p&v83
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['app-jango.azurewebsites.net']
 
 
 # Application definition
@@ -133,3 +133,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Add azure web app as trusted CRSF
+CRSF_TRUSTED_ORIGINS = ["app-jango.azurewebsites.net"]
