@@ -79,9 +79,16 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'chat',
         'USER': 'usu_chat',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
+        'PASSWORD': 'H0l4Mund0',
+        'HOST': 'chat2.mysql.database.azure.com',
         'PORT': '3306',
+        'OPTIONS': {
+            'ssl': {
+                'ssl_ca': 'DigiCertGlobalRootCA.crt',
+
+                'ssl_disabled': False,
+            }
+        }
     }
 }
 
