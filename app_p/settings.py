@@ -135,4 +135,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Add azure web app as trusted CRSF
-CRSF_TRUSTED_ORIGINS = ["https://app-jango.azurewebsites.net"]
+CRSF_TRUSTED_ORIGINS = ['https://app-jango.azurewebsites.net']
