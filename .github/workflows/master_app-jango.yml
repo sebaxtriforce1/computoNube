@@ -34,7 +34,7 @@ jobs:
       - name: Make migrations again
         run: python manage.py migrate
       - name: Create superuser
-        run:  winpty python manage.py createsuperuser
+        run:  python manage.py createsuperuser
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
