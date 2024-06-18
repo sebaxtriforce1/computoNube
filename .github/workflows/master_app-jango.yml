@@ -33,6 +33,16 @@ jobs:
         run: python manage.py makemigrations
       - name: Make migrations again
         run: python manage.py migrate
+      - name: Create superuser
+        run:  python manage.py createsuperuser
+      - name: Username
+        run: sebaxtriforce
+      - name: Email
+        run: sebax@gmail.com
+      - name: Password
+        run: admin123
+      - name: PasswordA
+        run: admin123
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
