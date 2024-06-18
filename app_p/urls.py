@@ -20,7 +20,7 @@ from app_bienvenida.views import bienvenida
 from app_chat import views
 
 urlpatterns = [
-    path('admin/', 'admin.site.urls'),
+    path('admin/', admin.site.urls),
     path('',bienvenida),
     path('mensajes/', views.consultar, name='mensajes'),
 ]
