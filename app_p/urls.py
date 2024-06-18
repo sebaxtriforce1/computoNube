@@ -20,7 +20,7 @@ from app_bienvenida.views import bienvenida
 from app_chat import views
 
 urlpatterns = [
-    path('admin/', include('app-jango.azurewebsites.net')),
+    path('admin/', 'app-jango.azurewebsites.net'),
     path('',bienvenida),
     path('mensajes/', views.consultar, name='mensajes'),
 ]
